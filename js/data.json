@@ -1,0 +1,20 @@
+{
+    "user-profile": {
+        "id":"siswaBaru",
+        "username": "siswa2",
+        "password": "siswa456",
+        "name": "siswa baru",
+        "email": "siswabaru.remidial@gmail.com",
+        "isDeleted": false
+    },
+
+    "user": [
+        {
+            "id": "siswa",
+            "username": "siswa",
+            "password": "siswa123",
+            "fullname": "siswa remidial",
+            "email": "siswa.remidial@gmail.com"
+        }
+    ]
+}

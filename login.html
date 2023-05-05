@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo1" border="0" class="logo"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Program</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kabar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tentang Kami</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Kelas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="kelasOnline.html">Kelas Online</a></li>
+                  <li><a class="dropdown-item" href="kelasOffline.html">Kelas Offline</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html"><button type="button" class="btn btn-dark">Sign Up</button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container">
+        <div class="container ">
+            <div class="row">
+              <div class="col-sm-5 col-md-6">
+                <img src="img/login.png" class="img-fluid" alt="login">
+              </div>
+              <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                <div class="py-4">
+                    <h3 class="py-5 text-center">Selamat Datang!</h3>
+                    <form action="kelasOffline.html" onSubmit="submitLogin()">
+                        <div id="form-box">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="Masukkan Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
+                            </div>
+                            <div class="d-grid gap-2 py-3">
+                                <button onclick="submitLogin()" class="btn btn-primary btn-dark" id="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="text-center">Belum Punya Akun?<a class="nav-link" href="signup.html">Sign Up</a>
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <script>
+        function submitLogin() {
+            let email = document.querySelector("#email").value
+            let password = document.querySelector("#password").value
+
+            fetch(`https://6453a277c18adbbdfea2fd32.mockapi.io/user/${ email }`, {
+                method: 'get',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(function(response) { return response.json() })
+            .then(function(data) {
+                console.log(data)
+                if ( data.password !== password ) {
+                    alert('username or password in incorect!')
+                }
+            })
+            .catch(function(error) {
+                console.log(error)
+            })
+        }
+    </script>
+
+</body>
+</html>
