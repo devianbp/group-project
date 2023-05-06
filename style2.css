@@ -1,0 +1,860 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background: white;
+}
+a {
+  text-decoration: none;
+}
+.first-section {
+  width: 100%;
+  margin-top: 0;
+  /* position: absolute; */
+  background-image: url(https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/HeroBanner.png);
+  background-position: 85% 120%;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  margin: 24px 0px 0px 0px;
+}
+
+.text-HeroBanner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+.hero-judul {
+  display: flex;
+  flex-direction: column;
+}
+.hero-judul h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 56px;
+}
+.hero-judul p {
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+}
+#text-HeroBanner-button {
+  margin-top: 32px;
+}
+
+#link{
+  padding: 16px 87px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 24px;
+}
+.button{
+  background-color: #F2F2F2;
+  padding: 16px 87px;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: bold;
+}
+@media (max-width: 1090px) {
+  .hero-judul h1 {
+    font-size: 24px;
+  }
+  .hero-judul p {
+    font-size: 12px;
+  }
+  #link{
+    padding: 12px 46px;
+    font-size: 13.5px;
+  }
+  #text-HeroBanner-button {
+    margin-top: 24px;
+  }
+  .text-HeroBanner {
+    margin: 0px 30px;
+  }
+  .first-section {
+    background-position: 75% 120%;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+/* Tentang Kami */
+.tentang-kami {
+  align-items: center;
+  display: flex;
+  margin: 4.3%;
+}
+.tentang-kami-foto {
+  float: left;
+}
+.tentang-kami-image img {
+  width: 396px;
+}
+.tentang-kami-desc {
+  margin-left: 4.7vw;
+  font-family: "Open Sans", sans-serif;
+}
+.tentang-kami-desc-p1 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.tentang-kami-desc h2 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+.tentang-kami-desc-p3 {
+  margin-bottom: 32px;
+  font-size: 18px;
+}
+.tentang-kami-button button {
+  font-family: "Lato", sans-serif;
+  color: black;
+  font-size: 20px;
+  padding: 12px 31.5px;
+  border-color: rgb(230, 229, 229);
+  background-color: white;
+  font-weight: 600;
+  border-radius: 8px;
+}
+@media (max-width: 1090px) {
+  .tentang-kami {
+    display: grid;
+    place-items: center;
+    margin: 20% 20px;
+  }
+  .tentang-kami-desc {
+    margin-left: 0px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .tentang-kami-desc-p1 {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .tentang-kami-desc h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .tentang-kami-desc-p3 {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  .tentang-kami-button button {
+    font-size: 16px;
+    padding: 8px 21.5px;
+  }
+  .tentang-kami-foto {
+    margin-bottom: 52px;
+  }
+  .tentang-kami-image img {
+    width: 297px;
+  }
+}
+/* Keunggulan */
+.third-section {
+  width: 100%;
+  margin-top: 0;
+  background-image: url(https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/Keunggulan.png);
+  background-position: 85% 45%;
+  background-size: cover;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.text-Keunggulan {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  /* margin-top: 64px; */
+}
+.keunggulan-judul h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.keunggulan-desc {
+  font-size: 18px;
+  font-weight: normal;
+  color: rgb(219, 219, 219);
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  margin-top: 52px;
+  font-family: "Lato", sans-serif;
+}
+.flex-items{
+  height: 338px;
+  width: 239px;
+  background: #F2F2F2;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+.flex-items:nth-child(1) {
+  margin-top: 35px;
+}
+
+.flex-items:nth-child(2) {
+  margin: 0px 43px;
+}
+
+.flex-items:nth-child(3) {
+  margin-top: 35px;
+}
+.flex-items-circle{
+  width: 145px;
+  height: 145px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: grid;
+  place-items: center;
+}
+.flex-items-text{
+  margin-top: 24px;
+  color: black;
+  padding: 0px 25px;
+}
+.flex-items-text h2{
+  font-size: 24px;
+}
+.flex-items-text p{
+  padding-top: 8px;
+  color: #6A6A6A;
+  font-size: 16px;
+}
+@media (max-width: 1090px){
+  .third-section{
+    background-position: 45% 45%;
+    height: max-content;
+  }
+  .flex-items{
+    height: 302px;
+    width: 214px;
+  }
+  .flex-container{
+    margin-top: 24px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+  }
+  .flex-items-circle{
+    width: 129px;
+    height: 129px;
+  }
+  .flex-items-circle img{
+    width: 100px;
+  }
+  .flex-items:nth-child(1){
+    margin-top: 0px;
+    margin-bottom: 48px;
+  }
+  .flex-items:nth-child(2){
+    margin: 0px 0px 48px 0px;
+  }
+  .flex-items:nth-child(3){
+    margin: 0px 0px 48px 0px;
+  }
+  .keunggulan-judul{
+    margin: 34px 20px 0px 20px;
+  }
+  .keunggulan-judul h1{
+    font-size: 32px;
+  }
+  .keunggulan-desc{
+    font-size: 14px;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .flex-items-text h2{
+    font-size: 20px;
+  }
+  .flex-items-text p{
+    font-size: 14px;
+  }
+}
+/* Berita Seni Terkini */
+.four-section{
+  /* display: flex;
+  place-content: center; */
+
+  font-family: "Open Sans", sans-serif;
+}
+.berita-seni-judul{
+  text-align: center;
+  margin-top: 52px;
+  margin-bottom: 72px;
+}
+.berita-seni-judul h1{
+  font-size: 40px;
+  font-weight: bolder;
+}
+.berita-seni-judul p{
+  margin-top: 24px;
+  font-size: 18px;
+}
+.flex-container-berita{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+.flex-items-berita{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 455px;
+  margin: 0px 4.3% 82px 4%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.flex-items-berita-image-desc{
+  padding-left: 30px;
+}
+.flex-items-berita-time{
+  display: flex;
+  align-items: center;
+}
+.flex-items-berita-time span{
+  padding-left: 6px;
+  font-size: 12px;
+  color: #6A6A6A;
+}
+.flex-items-berita-judul{
+  margin-top: 10px;
+}
+.flex-items-berita-judul h2{
+  font-size: 20px;
+}
+.flex-items-berita-image img{
+  width: 207px;
+  height: 180px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.flex-items-berita-button{
+  padding-top: 10px;
+}
+.flex-items-berita-button button{
+  padding: 6.5px 29.5px;
+  border-radius: 6px;
+  background-color: #292828;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+.flex-items-berita-button-all{
+  display: grid;
+  place-items: center;
+}
+.flex-items-berita-button-all button{
+  padding: 12px 33px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  border-color: black;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.flex-items-berita-button-all button img{
+  margin-left: 10px;
+}
+@media (max-width: 1090px){
+  .berita-seni-judul{
+    text-align: center;
+    margin: 32px 6% 41px 6%;
+  }
+  .berita-seni-judul h1{
+    font-size: 32px;
+    font-weight: bolder;
+  }
+  .berita-seni-judul p{
+    font-size: 14px;
+  }
+  .flex-items-berita{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    width: auto;
+    margin: 0px 21% 33px 21%;
+  }
+  .flex-items-berita-image-desc{
+    padding: 0px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+  }
+  .flex-items-berita-judul h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+  }
+  .flex-items-berita-button button{
+    padding: 11px 64px;
+  }
+  .flex-items-berita-button-all button{
+    padding: 10px 28px;
+    font-size: 13px;
+  }
+}
+/* Program Remedial */
+.five-section{
+  font-family: "Open Sans", sans-serif;
+}
+.program-remedial-desc{
+  display: grid;
+  place-items: center;
+  margin-bottom: 32px;
+}
+.program-remedial-judul{
+  text-align: center;
+  max-width: 50%;
+}
+.program-remedial-judul h1{
+  margin-bottom: 24px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.program-remedial-judul p{
+  font-size: 18px;
+}
+.flex-container-program {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 50px;
+}
+
+.flex-items-program {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  width: 543px;
+  height: max-content;
+  border-radius: 8px; 
+  background: #FFFFFF; 
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 35px;
+}
+.flex-items-program-image img{
+  width: 543px;
+  height: 308px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.flex-items-program-desc{
+  margin: 32px 0px 24px 0px;
+  padding: 0px 24px;
+}
+.flex-items-program-desc h2{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: black;
+}
+.flex-items-program-desc > p{
+  font-size: 18px;
+  color: black;
+  margin-bottom: 32px;
+}
+.flex-items-program-benefits{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.flex-items-program-benefits p{
+  margin-left: 16px;
+  color: black;
+}
+.flex-items-program-benefits-harga{
+  margin: 8px 0px 40px 0px;
+  font-size: 24px;
+  color: #FF4D4F;
+  font-weight: 600;
+}
+#link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2D2C2C;
+  padding: 20px 0px;
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: normal;
+}
+@media (max-width: 1090px){
+  .program-remedial-desc{
+    margin: 43px 10%;
+    width: 324px;
+  }
+  .program-remedial-judul{
+    max-width: none;
+    text-align: left;
+  }
+  .program-remedial-judul h1{
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .program-remedial-judul p{
+    font-size: 15px;
+  }
+  .flex-items-program{
+    width: 324px;
+  }
+  .flex-items-program-image img{
+    width: 324px;
+    height: 231px;
+  }
+  .flex-items-program-desc h2{
+    font-size: 20px;
+  }
+  .flex-items-program-desc > p{
+    font-size: 14px;
+  }
+  .flex-items-program-benefits{
+    font-size: 14px;
+  }
+  .flex-items-program-benefits p{
+    margin-left: 12px;
+  }
+  .flex-items-program-benefits-harga{
+    font-size: 18px;
+    margin: 2px 0px 30px 0px;
+  }
+  .flex-items-program-button a{
+    padding: 15px 0px;
+    font-size: 16px;
+  }
+}
+.six-section {
+  width: 100%;
+  margin-top: 0;
+  background-image: url(https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/KaryaSiswa.png);
+  background-position: 85% 45%;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  
+}
+
+.text-KaryaSiswa{
+  display: grid;
+  place-items: center;
+  place-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 0px 25%;
+}
+.KaryaSiswa-judul{
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+.KaryaSiswa-judul h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+.karyaSiswa-desc{
+  font-size: 18px;
+  margin-top: 24px;
+}
+/* Slider */
+.body{
+  padding: 0px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.direction button{
+  font-family: cursive;
+  font-weight: bold;
+  background-color: #ffffff;
+  border:none;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  transition: 0.5s;
+  margin:0 10px;
+}
+.direction button:hover{
+  background-color: #7c7c7c;
+}
+
+.item{
+  border-radius: 8px;
+  width:380px;
+  height:303px;
+  
+  overflow: hidden;
+  transition: 0.5s;
+  margin:10px;
+  scroll-snap-align: start;
+}
+
+.item-flex{
+  position: relative;
+  color: white;
+  display: flex;
+  place-items: end;
+  place-content: center;
+}
+.item-flex-desc1{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.521);
+  padding-bottom: 25px;
+}
+.item-flex-desc2{
+  text-align: left;
+  width: 380px;
+  padding: 10px 25px 0px;
+}
+.item-flex-desc2 h3{
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+.item-flex-desc-img{
+  margin-top: 18px;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+.item-flex-desc-img img{
+  margin-right: 8px;
+}
+
+#list{
+  display: flex;
+  width:max-content;
+}
+#formList{
+  max-width: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: both;
+}
+#formList::-webkit-scrollbar{
+  display: none;
+}
+@media screen and (max-width: 1024px){
+  .item{
+      width: calc(33.3vw - 20px);
+  }
+  .direction{
+      display: none;
+  }
+}
+@media screen and (max-width: 768px){
+  .item{
+      width: calc(50vw - 20px);
+  }
+  .direction{
+      display: none;
+  }
+}
+@media (max-width: 1090px){
+  .text-KaryaSiswa{
+    place-items: normal start;
+    padding: 0 24px;
+  }
+  .KaryaSiswa-judul h1{
+    font-size: 32px;
+    text-align: left;
+  }
+  .karyaSiswa-desc{
+    font-size: 14px;
+    text-align:left;
+  }
+  #formList{
+    max-height: 227px;
+  }
+  #list{
+    max-height: 227px;
+  }
+  .item{
+    max-height: 227px;
+  }
+  .item-flex-desc2{
+    width: fit-content;
+  }
+  .item-flex-desc2 h3{
+    font-size: 20px;
+  }
+}
+.seven-section{
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+.seven-section h1{
+  margin: 82px 0 0 110px;
+  font-size: 40px;
+}
+.container{
+  margin: 20px 110px 0;
+}
+.info{
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.info p:nth-child(2){
+  padding-left: 80px;
+}
+.desc{
+  display: flex;
+  align-items: center;
+  gap: 96px;
+}
+.heading{
+  display: grid;
+  margin-top: 20px;
+  max-width: 1300px;
+}
+.heading h2{
+  font-size: 32px;
+}
+.heading p{
+  font-size: 18px;
+  text-align: justify;
+  margin-top: 16px;
+}
+.gambar img{
+  max-height: 324px;
+}
+.flex-seven{
+  display: flex;
+  align-items: center;
+}
+.flex-seven p{
+  font-size: 20px;
+}
+.flex-seven p:nth-child(1){
+  background-color: #EAEAEA;
+  margin-right: 48px;
+  padding: 8px 16px;
+  border-radius: 25px;
+}
+.line{
+  margin-top: 72px;
+  height: 2px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #E3E3E3;
+}
+@media (max-width: 1090px){
+  .seven-section h1{
+    font-size: 24px;
+    margin: 28px 24px 0;
+  }
+  .info p{
+    font-size: 12px;
+  }
+  .info p:nth-child(2){
+    padding-left: 19px;
+  }
+  .heading h2{
+    font-size: 16px;
+  }
+  .container{
+    margin: 22px 20px 16px 20px;
+  }
+  .desc{
+    gap: 10px;
+  }
+  .heading .desc-p{
+    display: none;
+  }
+  .gambar img{
+    max-height: 135px;
+    max-width: 135px;
+  }
+  .flex-seven p:nth-child(1){
+    margin-right: 8px;
+  }
+  .flex-seven p{
+    font-size: 14px;
+    margin-top: 12px;
+  }
+  .heading{
+    max-width: 209px;
+    margin-top: 0px;
+  }
+  .heading{
+    margin-top: 0px;
+  }
+  .line{
+    display: none;
+  }
+}
+.logo {
+  max-height: 30px;
+}
+
+
+#footer{
+  background-color: black;
+}
+.py-4 a{
+  color: #CDCDCD;
+}
+.py-4 p{
+  color: white;
+}
+.py-4 h4{
+  color: white;
+}
