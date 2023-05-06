@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- style css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/image/logo-remedial-1024x266.png.png" width="164" height="38" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kabar</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle bg-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Kelas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Kelas Online</a></li>
+                            <li><a class="dropdown-item" href="#">Kelas Offline</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html"><button type="button" class="btn btn-dark p-2">Sign
+                                Up</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- end nav -->
+
+    <!-- detail pembayaran -->
+    <Section id="paymen">
+        <h2 class="section-title text-center fw-bold mt-5 mb-6">
+            Detail Pembayaran
+        </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 shadow-sm p-2 mb-5 bg-body-white rounded">
+                    <form>
+                        <div class="row">
+                            <div class="mb-6 mt-2">
+                                <label for="exampleInputnama" class="form-label">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="examplenama" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-6 col-sm-6 mt-2">
+                                <label for="exampleInputemail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleemail">
+                            </div>
+                            <div class="mb-6 col-sm-6 mt-2">
+                                <label for="exampleInputhp" class="form-label">Nomor HP</label>
+                                <input type="tel" class="form-control" id="examplehp">
+                            </div>
+                            <div class="mb-6 col-sm-6 mt-2">
+                                <label for="exampleInputtempatlahir" class="form-label">Tempat Lahir</label>
+                                <input type="text" class="form-control" id="examplelahir">
+                            </div>
+                            <div class="mb-6 col-sm-6 mt-2">
+                                <label for="exampleInputPassword1" class="form-label">Tanggal Lahir</label>
+                                <input type="date" class="form-control" id="exampletanggal">
+                            </div>
+                            <div class="col-8 " id="jenis">
+                                <label for="jenisklamin" class="mt-2">Jenis Kelamin</label>
+                                <div class="d-flex align-items-center">
+                                    <div class="form-check me-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Laki-Laki
+                                        </label>
+                                    </div>
+                                    <div class="form-check col">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Perempuan
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-6 mt-2">
+                                <label for="exampleInputnama" class="form-label">Sekolah/instansi</label>
+                                <input type="text" class="form-control" id="sekolah" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-6 mt-2">
+                                <label for="exampleInputnama" class="form-label">Instagram</label>
+                                <input type="text" class="form-control" id="instagram" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 mt-4">
+                                <label for="exampleFormControlTextarea1" class="form-label">Alamat Rumah</label>
+                                <textarea class="form-control" id="alamatrumah" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3 mt-2">
+                                <label for="exampleFormControlTextarea1" class="form-label">Alasan Mengikuti
+                                    Program</label>
+                                <textarea class="form-control" id="alasanmengikuti" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFileSm" class="form-label">Upload Portofolio</label>
+                                <input class="form-control form-control-sm" id="formfile" type="file">
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex align-items-center justify-content-between">
+                            <button type="button" class="btn btn-outline-dark " data-dismiss="modal"
+                                id="cencelbtn">Cencel</button>
+                            <button type="button" class="btn btn-outline-dark" data-dismiss="modal"
+                                id="nextbtn">Daftar</button>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-4 mt-4">
+                    <div class="text-center">
+                        <img src="./assets/image/Rectangle 2935.png" style="max-width: 100%;" class="rounded" alt="...">
+                    </div>
+                    <div class="shadow mt-4 p-3 mb-3 bg-body-white rounded">
+                        <label for="" class="mb-3"><i class="fa-sharp fa-solid fa-ticket" style="color: #000000;"></i>
+                            Do you have coupon code? </label>
+                        <div class="input-group mb-4">
+                            <input type="text" class="form-control" placeholder="Masukkan Kode "
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <button class="input-group-text" id="basic-addon2">Apply</button>
+                        </div>
+                    </div>
+                    <div class="total-payment shadow mt-4 p-3 mb-3 bg-body-white rounded">
+                        <p class="fs-4 m-0 fw-bold">REMDIAL OFFLINE</p>
+                        <P class="fw-light m-0">Remedial House, Jakarta Timur</P>
+                        <hr style="border-width: 2px; border-color: #575757;">
+                        <div class="benefit-text">
+                            <p class="mb-2 fs-4 m-0 fw-bold">Benefits</p>
+                            <P class="mb-2 fw-light m-0" style="color: #7D7D7D;">Tersedia 3 Mata Pelajaran</P>
+                            <P class="mb-2 fw-light m-0" style="color: #7D7D7D;">Belajar di Ruang Kelas</P>
+                            <P class="mb-2 fw-light m-0" style="color: #7D7D7D;">Interaksi Langsung dengan Mentor</P>
+                            <P class="mb-2 fw-light m-0" style="color: #7D7D7D;">Sertifikat</P>
+                            <span class="fw-bold fw-bold d-flex align-items-center justify-content-end"
+                                style="color: #820000; ">Rp.
+                                550.000</span>
+                        </div>
+                        <hr style="border-width: 2px; border-color: #575757;">
+                        <div class="align-items-center">
+                            <label class="d-flex align-items-center justify-content-between">Discount
+                                <span class="fw-bold" style="color: #820000;">Rp.
+                                    20.000</span>
+                            </label>
+                            <label class="d-flex align-items-center justify-content-between">Duration
+                                <span class="fw-bold" style="color: #820000;">6
+                                    Months</span>
+                            </label>
+                        </div>
+                        <hr style="border-width: 2px; border-color: #575757;">
+                        <div class="total">
+                            <label class="fw-bold d-flex align-items-center justify-content-between ">Total
+                                <span class="fw-bold" style="color: #820000;">Rp.
+                                    530.000</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+    <!-- footer -->
+    <section id="footers" class="bg-dark">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="./assets/image/logo_footer 1.png" alt="" width="310px">
+                    <p class="text-light mb-2 mt-2">Remedial merupakan kegiatan yang akan Serrum lakukan selama 1 tahun
+                        di
+                        2019.
+                        Kegiatan berfokus
+                        pada pola konsumsi informasi dan pengetahuan berdasarkan perkembangan hari ini</p>
+                    <div id="icon">
+                        <a href="#"><i class="fa-brands fa-facebook-f fa-xl me-4" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram  fa-xl me-4" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g  fa-xl me-4" style="color: #ffffff;"></i></a>
+                        <a href="3"><i class="fa-regular fa-envelope fa-xl me-4" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <p class=" fw-bold text-light fs-3 m-0 mt-2">Discover</p>
+                    <div id="title-discover">
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Home</p>
+                        </a>
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Benefit</p>
+                        </a>
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Course</p>
+                        </a>
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Review</p>
+                        </a>
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Sit Amet</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <p class=" fw-bold text-light fs-3 m-0 mt-2">Resources</p>
+                    <div id="title-discover">
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Download</p>
+                        </a>
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Help Center</p>
+                        </a>
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Events</p>
+                        </a>
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Guides</p>
+                        </a>
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Partner</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <p class=" fw-bold text-light fs-3 m-0 mt-2">Company</p>
+                    <div id="title-discover">
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">About us</p>
+                        </a>
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Contact Us</p>
+                        </a>
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Products</p>
+                        </a>
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Login</p>
+                        </a>
+                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
+                            <p class="m-0 mt-2">Sign Up</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-width: 2px; border-color: #ffffff;">
+            <p class="fw-medium fs-6 text-light m-0 text-center">Remedial Landing Website - © 2023 All Rights Reserved
+            </p>
+        </div>
+    </section>
+
+    <!-- js boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // let test = 'hello'
+
+        function handleClick() {
+            let formdata = {
+                nama: document.getElementById('examplenama').value,
+                email: document.getElementById('exampleemail').value,
+                nomor: document.getElementById('examplehp').value,
+                lahir: document.getElementById('examplelahir').value,
+                tanggal: document.getElementById('exampletanggal').value,
+                klamin: document.getElementById('jenis').value,
+                sekolah: document.getElementById('sekolah').value,
+                instagram: document.getElementById('instagram').value,
+                alamat: document.getElementById('alamatrumah').value,
+                alasan: document.getElementById('alasanmengikuti').value,
+                porto: document.getElementById('formfile').value
+            }
+            // console.log(localStorage.getItem('formdata'))
+            localStorage.setItem("formdata", JSON.stringify(formdata));
+
+        }
+        document.getElementById('nextbtn').addEventListener('click', handleClick)
+
+
+    </script>
+</body>
+
+</html>

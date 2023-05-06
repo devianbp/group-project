@@ -1,303 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remedial</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
-    <!-- style css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <!-- navbar -->
+  <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/image/logo-remedial-1024x266.png.png" width="164" height="38" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Program</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kabar</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle bg-white" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Kelas
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Kelas Online</a></li>
-                            <li><a class="dropdown-item" href="#">Kelas Offline</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="foto/Logo.png" alt="logo1" border="0" class="logo"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kabar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tentang Kami</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Kelas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" aria-current="page" href="kelasOnline.html">Kelas Online</a></li>
+                <li><a class="dropdown-item" href="kelasOffline.html">Kelas Offline</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html"><button type="button" class="btn btn-dark">Sign Up</button></a>
+            </li>
+          </ul>
         </div>
-    </nav> <!-- end nav -->
+      </div>
+    </nav>
 
-    <!-- detail pembayaran -->
-    <Section id="paymen">
-        <h2 class="section-title text-center fw-bold mt-5 mb-6">
-            Detail Pembayaran
-        </h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 shadow-sm p-2 mb-5 bg-body-white rounded">
-                    <form>
-                        <div class="row">
-                            <div class="mb-6 mt-2">
-                                <label for="exampleInputnama" class="form-label">Nama Lengkap</label>
-                                <input type="text" class="form-control" id="examplenama" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-6 col-sm-6 mt-2">
-                                <label for="exampleInputPassword1" class="form-label">Email</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <div class="mb-6 col-sm-6 mt-2">
-                                <label for="exampleInputPassword1" class="form-label">Nomor HP</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <div class="mb-6 col-sm-6 mt-2">
-                                <label for="exampleInputPassword1" class="form-label">Tempat Lahir</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <div class="mb-6 col-sm-6 mt-2">
-                                <label for="exampleInputPassword1" class="form-label">Tanggal Lahir</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <div class="col-8">
-                                <label for="jenisklamin" class="mt-2">Jenis Kelamin</label>
-                                <div class="d-flex align-items-center">
-                                    <div class="form-check me-4">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Laki-Laki
-                                        </label>
-                                    </div>
-                                    <div class="form-check col">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                            checked>
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            Perempuan
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-6 mt-2">
-                                <label for="exampleInputnama" class="form-label">Sekolah/instansi</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-6 mt-2">
-                                <label for="exampleInputnama" class="form-label">Instagram</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3 mt-4">
-                                <label for="exampleFormControlTextarea1" class="form-label">Alamat Rumah</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <div class="mb-3 mt-2">
-                                <label for="exampleFormControlTextarea1" class="form-label">Alasan Mengikuti
-                                    Program</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <div class="mb-3 mt-2">
-                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </div>
-                        <div class="modal-footer d-flex align-items-center justify-content-between">
-                            <button type="button" class="btn btn-outline-dark " data-dismiss="modal"
-                                id="nextbtn">Cencel</button>
-                            <button type="button" class="btn btn-outline-dark" data-dismiss="modal"
-                                id="nextbtn">Daftar</button>
-                        </div>
-                        <div class="modal-footer">
-
-                        </div>
-                    </form>
-                </div>
-                <div class="col-sm-4 mt-4">
-                    <div class="text-center">
-                        <img src="./assets/image/Rectangle 2935.png" style="max-width: 100%;" class="rounded" alt="...">
-                    </div>
-                    <div class="shadow mt-4 p-3 mb-3 bg-body-white rounded">
-                        <label for="" class="mb-3"><i class="fa-sharp fa-solid fa-ticket" style="color: #000000;"></i>
-                            Do you have coupon code? </label>
-                        <div class="input-group mb-4">
-                            <input type="text" class="form-control" placeholder="Masukkan Kode "
-                                aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <button class="input-group-text" id="basic-addon2">Apply</button>
-                        </div>
-                    </div>
-                    <div class="total-payment shadow mt-4 p-3 mb-3 bg-body-white rounded">
-                        <p class="fs-4 m-0 fw-bold">REMDIAL OFFLINE</p>
-                        <P class="fw-light m-0">Remedial House, Jakarta Timur</P>
-                        <hr style="border-width: 2px; border-color: #575757;">
-                        <div class="benefit-text">
-                            <p class="mb-2 fs-4 m-0 fw-bold">Benefits</p>
-                            <P class="mb-2 fw-light m-0" style="color: #7D7D7D;">Tersedia 3 Mata Pelajaran</P>
-                            <P class="mb-2 fw-light m-0" style="color: #7D7D7D;">Belajar di Ruang Kelas</P>
-                            <P class="mb-2 fw-light m-0" style="color: #7D7D7D;">Interaksi Langsung dengan Mentor</P>
-                            <P class="mb-2 fw-light m-0" style="color: #7D7D7D;">Sertifikat</P>
-                            <span class="fw-bold fw-bold d-flex align-items-center justify-content-end"
-                                style="color: #820000; ">Rp.
-                                550.000</span>
-                        </div>
-                        <hr style="border-width: 2px; border-color: #575757;">
-                        <div class="align-items-center">
-                            <label class="d-flex align-items-center justify-content-between">Discount
-                                <span class="fw-bold" style="color: #820000;">Rp.
-                                    20.000</span>
-                            </label>
-                            <label class="d-flex align-items-center justify-content-between">Duration
-                                <span class="fw-bold" style="color: #820000;">6
-                                    Months</span>
-                            </label>
-                        </div>
-                        <hr style="border-width: 2px; border-color: #575757;">
-                        <div class="total">
-                            <label class="fw-bold d-flex align-items-center justify-content-between ">Total
-                                <span class="fw-bold" style="color: #820000;">Rp.
-                                    530.000</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </Section>
-
-    <!-- footer -->
-    <section id="footers" class="bg-dark">
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="./assets/image/logo_footer 1.png" alt="" width="310px">
-                    <p class="text-light mb-2 mt-2">Remedial merupakan kegiatan yang akan Serrum lakukan selama 1 tahun
-                        di
-                        2019.
-                        Kegiatan berfokus
-                        pada pola konsumsi informasi dan pengetahuan berdasarkan perkembangan hari ini</p>
-                    <div id="icon">
-                        <a href="#"><i class="fa-brands fa-facebook-f fa-xl me-4" style="color: #ffffff;"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram  fa-xl me-4" style="color: #ffffff;"></i></a>
-                        <a href="#"><i class="fa-brands fa-google-plus-g  fa-xl me-4" style="color: #ffffff;"></i></a>
-                        <a href="3"><i class="fa-regular fa-envelope fa-xl me-4" style="color: #ffffff;"></i></a>
-                    </div>
-                </div>
-                <div class="col-4 col-xs-3">
-                    <p class=" fw-bold text-light fs-3 m-0 mt-2">Discover</p>
-                    <div id="title-discover">
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Home</p>
-                        </a>
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Benefit</p>
-                        </a>
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Course</p>
-                        </a>
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Review</p>
-                        </a>
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Sit Amet</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-4  ">
-                    <p class=" fw-bold text-light fs-3 m-0 mt-2">Discover</p>
-                    <div id="title-discover">
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Home</p>
-                        </a>
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Benefit</p>
-                        </a>
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Course</p>
-                        </a>
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Review</p>
-                        </a>
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Sit Amet</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <p class=" fw-bold text-light fs-3 m-0 mt-2">Discover</p>
-                    <div id="title-discover">
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Home</p>
-                        </a>
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Benefit</p>
-                        </a>
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Course</p>
-                        </a>
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Review</p>
-                        </a>
-                        <a href="#" class="fw-medium fs-6 text-light" style="text-decoration: none;">
-                            <p class="m-0 mt-2">Sit Amet</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <hr style="border-width: 2px; border-color: #ffffff;">
-            <p class="fw-medium fs-6 text-light m-0 text-center">Remedial Landing Website - © 2023 All Rights Reserved
+    <main>
+      <section class="first-section">
+        <div class="text-HeroBanner">
+          <div class="hero-judul">
+            <h1>Ayo Bergabung Dengan Program Kami</h1>
+            <p id="description">
+              Gabunglah bersama kami untuk mengasah kemampuan Anda yang
+              terpendam. <br />
+              Setiap langkah kecil membawa Anda lebih dekat pada tujuan Anda.
             </p>
+          </div>
+          <div id="text-HeroBanner-button">
+            <a href="https://skilvul.com"><button class="button">Daftar</button></a>
+          </div>
         </div>
-    </section>
+      </section>
+      <section>
+        <div class="tentang-kami">
+          <div class="tentang-kami-foto">
+            <div class="tentang-kami-image">
+              <img
+                src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/posterlogo.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="tentang-kami-desc">
+            <p class="tentang-kami-desc-p1">Tentang Kami</p>
+            <h2>Remedial</h2>
+            <p class="tentang-kami-desc-p3">
+              Remedial merupakan program yang Serrum lakukan selama 6 bulan di
+              awal tahun ajaran baru. Kegiatan ini melibatkan murid SMA
+              (pilihan) di Jakarta dan sekitarnya yang berfokus pada pola
+              menggali minat siswa dalam mencari pengetahuan sesuai dengan
+              konteks anak dan zamannya.
+            </p>
+            <a href="#" class="tentang-kami-button"
+              ><button>Learn More</button></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="third-section">
+        <div class="text-Keunggulan">
+          <div class="keunggulan-judul">
+            <h1>Kenapa Bergabung dengan Kami?</h1>
+            <p class="keunggulan-desc">
+              Ayo, jangan ragu untuk bergabung dengan kami, kami akan membantu
+              anda untuk mencapai tujuan
+            </p>
+          </div>
+          <div class="flex-container">
+            <div class="flex-items">
+              <div class="flex-items-circle">
+                <img
+                  src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/RatingMentor.png"
+                  alt="RatingMentor"
+                />
+              </div>
+              <div class="flex-items-text">
+                <h2>Expert Mentor</h2>
+                <p>Kami memiliki mentor yang ahli</p>
+              </div>
+            </div>
+            <div class="flex-items">
+              <div class="flex-items-circle">
+                <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/Quality.png" alt="RatingMentor" />
+              </div>
+              <div class="flex-items-text">
+                <h2>Sertifikat</h2>
+                <p>Siswa akan mendapatkan sertifikat kelulusan</p>
+              </div>
+            </div>
+            <div class="flex-items">
+              <div class="flex-items-circle">
+                <img
+                  src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/Dialogue.png"
+                  alt="RatingMentor"
+                />
+              </div>
+              <div class="flex-items-text">
+                <h2>Konsultasi</h2>
+                <p>Kami akan memberikan konsultasi gratis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="four-section">
+        <div class="berita-seni-judul">
+          <h1>Berita Seni Terkini</h1>
+          <p>
+            Kabar Terakhir dari Sumber Terpercaya, Kami Hadirkan untuk Kamu!
+          </p>
+        </div>
+        <div class="flex-container-berita">
+          <div class="flex-items-berita">
+            <div class="flex-items-berita-image">
+              <img
+                src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/ucok.png"
+                alt=""
+              />
+            </div>
+            <div class="flex-items-berita-image-desc">
+              <div class="flex-items-berita-time">
+                <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/access-time.png" alt="time" />
+                <span>July 24, 2019</span>
+              </div>
+              <div class="flex-items-berita-judul">
+                <h2>Ucok : “Gue Tahu Musik dari Tongkrongan”</h2>
+              </div>
+              <div class="flex-items-berita-button">
+                <a href="#"><button>Lihat Berita</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-items-berita">
+            <div class="flex-items-berita-image">
+              <img src="foto/kamengski.png" alt="" />
+            </div>
+            <div class="flex-items-berita-image-desc">
+              <div class="flex-items-berita-time">
+                <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/access-time.png" alt="time" />
+                <span>February 15, 2019</span>
+              </div>
+              <div class="flex-items-berita-judul">
+                <h2>Kamengski : Desain Itu Tribute dan Penghormatan</h2>
+              </div>
+              <div class="flex-items-berita-button">
+                <a href="#"><button>Lihat Berita</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-items-berita">
+            <div class="flex-items-berita-image">
+              <img src="foto/kotempo.png" alt="" />
+            </div>
+            <div class="flex-items-berita-image-desc">
+              <div class="flex-items-berita-time">
+                <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/access-time.png" alt="time" />
+                <span>February 15, 2019</span>
+              </div>
+              <div class="flex-items-berita-judul">
+                <h2>KontempoPedia : Kado untuk Kartini</h2>
+              </div>
+              <div class="flex-items-berita-button">
+                <a href="#"><button>Lihat Berita</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-items-berita">
+            <div class="flex-items-berita-image">
+              <img src="foto/pertemuan.png" alt="" />
+            </div>
+            <div class="flex-items-berita-image-desc">
+              <div class="flex-items-berita-time">
+                <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/access-time.png" alt="time" />
+                <span>February 15, 2019</span>
+              </div>
+              <div class="flex-items-berita-judul">
+                <h2>Pertemuan Ke Tujuh : Ngobrol Bareng OK Video</h2>
+              </div>
+              <div class="flex-items-berita-button">
+                <a href="#"><button>Lihat Berita</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-items-berita-button-all">
+          <a href="#"
+            ><button>View All <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/Vector.png" alt="" /></button
+          ></a>
+        </div>
+      </section>
+      <section class="five-section">
+        <div class="program-remedial-desc">
+          <div class="program-remedial-judul">
+            <h1>Program Remedial</h1>
+            <p>
+              Program belajar diselenggarakan online dan offline yang dapat
+              membantu Anda memperoleh pengetahuan dan keterampilan baru
+            </p>
+          </div>
+        </div>
+        <div class="flex-container-program">
+          <div class="flex-items-program">
+            <div class="flex-items-program-image">
+              <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/program1.jpg" alt="Remedial" />
+            </div>
+            <div class="flex-items-program-desc">
+              <h2>Remedial Online</h2>
+              <p>
+                Metode pembelajaran dilakukan melalui jaringan internet yang
+                dilakukan secara live atau asinkronus (tidak live)
+              </p>
+              <div class="flex-items-program-benefits">
+                <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/benefit1.png" alt="benefit" />
+                <p>Tersedia 10 Mata Pelajaran</p>
+              </div>
+              <div class="flex-items-program-benefits">
+                <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/benefit2.png" alt="benefit" />
+                <p>Belajar Lebih Fleksible</p>
+              </div>
+              <div class="flex-items-program-benefits">
+                <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/benefit3.png" alt="benefit" />
+                <p>Forum Diskusi Online</p>
+              </div>
+              <div class="flex-items-program-benefits">
+                <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/benefit4.png" alt="benefit" />
+                <p>Sertifikat</p>
+              </div>
+              <div class="flex-items-program-benefits-harga">
+                <p>RP. 250.000</p>
+              </div>
+              <div class="flex-items-program-button">
+                <a href="https://skilvul.com" id="link">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-items-program">
+            <div class="flex-items-program-image">
+              <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/program2.jpg" alt="Remedial" />
+            </div>
+            <div class="flex-items-program-desc">
+              <h2>Remedial Offline</h2>
+              <p>
+                Metode pembelajaran dilakukan dengan interaksi langsung antara
+                mentor dan siswa di ruang kelas
+              </p>
+              <div class="flex-items-program-benefits">
+                <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/benefit1.png" alt="benefit" />
+                <p>Tersedia 3 Mata Pelajaran</p>
+              </div>
+              <div class="flex-items-program-benefits">
+                <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/benefit5.png" alt="benefit" />
+                <p>Belajar di Ruang Kelas</p>
+              </div>
+              <div class="flex-items-program-benefits">
+                <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/benefit3.png" alt="benefit" />
+                <p>Interaksi Langsung dengan Mentor</p>
+              </div>
+              <div class="flex-items-program-benefits">
+                <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/benefit4.png" alt="benefit" />
+                <p>Sertifikat</p>
+              </div>
+              <div class="flex-items-program-benefits-harga">
+                <p>RP. 550.000</p>
+              </div>
+              <div class="flex-items-program-button">
+                <a href="https://skilvul.com" id="link">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="six-section">
+        <div class="text-KaryaSiswa">
+          <div class="KaryaSiswa-judul">
+            <h1>Karya Siswa</h1>
+            <p class="karyaSiswa-desc">
+              Karya siswa memperlihatkan keterampilan, kreativitas, dan
+              kemampuan siswa dalam memahami konsep dan menerapkan pengetahuan
+              mereka.
+            </p>
+          </div>
+        </div>
 
-    <!-- js boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-
-    <script>
-        let test = 'hello'
-
-        function handleClick() {
-            const nama = document.getElementById('examplenama').value
-            console.log(localStorage.getItem('storageKey'))
-            if (checkForStorage) {
-                localStorage.setItem("storageKey", nama);
-            }
-
-        }
-        const checkForStorage = () => {
-            return typeof (Storage) !== 'undefined';
-        }
-        document.getElementById('nextbtn').addEventListener('click', handleClick)
-
-
-    </script>
-</body>
-
+        <div class="body">
+          <div class="direction">
+            <button id="prev">
+              <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/Panah_Kiri.png" alt="" />
+            </button>
+          </div>
+          <div id="formList">
+            <div id="list">
+              <div class="item">
+                <div class="item-flex">
+                  <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/KaryaSiswa1.png" class="avatar"/>
+                  <div class="item-flex-desc1">
+                    <div class="item-flex-desc2">
+                      <h3>Presentasi Pameran “Remedial”</h3>
+                      <div class="item-flex-desc-img"><img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/KaryaVector.png" alt=""><p>23 Juli 2018</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-flex">
+                  <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/KaryaSiswa1.png" class="avatar"/>
+                  <div class="item-flex-desc1">
+                    <div class="item-flex-desc2">
+                      <h3>Presentasi Pameran “Remedial”</h3>
+                      <div class="item-flex-desc-img"><img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/KaryaVector.png" alt=""><p>23 Juli 2018</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-flex">
+                  <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/KaryaSiswa1.png" class="avatar"/>
+                  <div class="item-flex-desc1">
+                    <div class="item-flex-desc2">
+                      <h3>Presentasi Pameran “Remedial”</h3>
+                      <div class="item-flex-desc-img"><img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/KaryaVector.png" alt=""><p>23 Juli 2018</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-flex">
+                  <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/KaryaSiswa1.png" class="avatar"/>
+                  <div class="item-flex-desc1">
+                    <div class="item-flex-desc2">
+                      <h3>Presentasi Pameran “Remedial”</h3>
+                      <div class="item-flex-desc-img"><img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/KaryaVector.png" alt=""><p>23 Juli 2018</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-flex">
+                  <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/KaryaSiswa1.png" class="avatar"/>
+                  <div class="item-flex-desc1">
+                    <div class="item-flex-desc2">
+                      <h3>Presentasi Pameran “Remedial”</h3>
+                      <div class="item-flex-desc-img"><img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/KaryaVector.png" alt=""><p>23 Juli 2018</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-flex">
+                  <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/KaryaSiswa1.png" class="avatar"/>
+                  <div class="item-flex-desc1">
+                    <div class="item-flex-desc2">
+                      <h3>Presentasi Pameran “Remedial”</h3>
+                      <div class="item-flex-desc-img"><img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/KaryaVector.png" alt=""><p>23 Juli 2018</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="direction">
+            <button id="next">
+              <img src="https://childless-bypass.000webhostapp.com/wp-content/uploads/2023/03/Panah_Kanan.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="seven-section">
+        <h1>Artikel Terbaru</h1>
+        <div class="container">
+          <div class="desc">
+            <div class="heading">
+              <div class="info"><p>Admin</p><p>9 Februari 2023</p></div>
+              <h2>Memento Mori; Pameran Tunggal Prajna Puspa Arum.</h2>
+              <p class="desc-p">Proses refleksi Prajna (pelajar SMA Kelas 12), proses penciptaan karya melalui projek ke dalam media gambar dan lukis. Prajna akan mempresentasikan bagaimana ia menerjemahkan pelbagai masalah remaja yang ia hadapi dengan merefleksikannya ke dalam bentuk gambar, goresan, teks. memento mori caranya untuk mengingat hal-hal apapun yang ia temui dalam kehidupan sehari-hari. </p>
+              <div class="flex-seven"><p>Hello Siswa</p><p>10 min read</p></div>
+            </div>
+            <div class="gambar"><img src="foto/artikel1.png" alt=""></div>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="container">
+          <div class="desc">
+            <div class="heading">
+              <div class="info"><p>rianto rianto</p><p>14 Februari 2020</p></div>
+              <h2>Diskusi Buku “The Ligthworkers” karya Hannah Brigitta.</h2>
+              <p class="desc-p">Hannah Brigitta peserta program remedial menulis sebuah novel “The Lightworkers”. Novel “The Lightworkers” menjadi titik tolak Hannah menciptakan karya seni rupa dan berpameran di Gudskul. Ditulis sejak 2017 hingga 2020, Hannah mencoba menceritakan tentang perempuan indigo bernama Lisa Mahigawa. </p>
+              <div class="flex-seven"><p>Kabar</p><p>15 min read</p></div>
+            </div>
+            <div class="gambar"><img src="foto/artikel2.png" alt=""></div>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="container">
+          <div class="desc">
+            <div class="heading">
+              <div class="info"><p>rianto rianto</p><p>24 Juli 2019</p></div>
+              <h2>Ucok : “Gue Tahu Musik dari Tongkrongan”.</h2>
+              <p class="desc-p">Anak muda khususnya pelajar pasti demen musik yang sedang berkembang saat ini. Sebagai pelajar di Jakarta gue juga lumayan ngikutin perkembangan musik khususnya musik underground yang belakangan ini sedang harum-harumnya di kalangan anak sekolahan. Mulai dari band-band yang umurnya cukup muda seperti Feast, The Panturas, Jason Ranti, Efek Rumah Kaca, dan Silampukau. </p>
+              <div class="flex-seven"><p>Berita Seni</p><p>10 min read</p></div>
+            </div>
+            <div class="gambar"><img src="foto/artikel3.png" alt=""></div>
+          </div>
+          <div class="line"></div>
+        </div>
+      </section>
+    </main>
+    <section id="footer" class="py-4">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 col-lg-6">
+                  <a class="d-block mb-3" href="#"><img src="foto/logo2.png" alt="logo1" border="0" class="logo"/></a>
+                  <p>Remedial merupakan kegiatan yang akan Serrum <br>
+                      lakukan selama 1 tahun di 2019. Kegiatan <br>
+                      berfokus pada pola konsumsi informasi dan <br>
+                      pengetahuan berdasarkan perkembangan hari ini</p><br>
+                  <a><img src="foto/fb.png" class="img-fluid"></a> 
+                  <a> <img src="foto/ig.png" class="img-fluid"></a>
+                  <a> <img src="foto/google.png" class="img-fluid"></a>     
+                  <a> <img src="foto/email.png" class="img-fluid"></a>  
+              </div>
+              <div class="col-md-4 col-lg-2 mt-4 mt-md-0">
+                  <h4 class="mb-2">Discover</h4>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Benefit</a></li>
+                      <li><a href="#">Course</a></li>
+                      <li><a href="#">Reeview</a></li>
+                      <li><a href="#">Sit Amet</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-lg-2 mt-4 mt-md-0">
+                  <h4 class="mb-2">Resources</h4>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Download</a></li>
+                      <li><a href="#">Help Center</a></li>
+                      <li><a href="#">Events</a></li>
+                      <li><a href="#">Guides</a></li>
+                      <li><a href="#">Patner</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-lg-2 mt-4 mt-md-0">
+                  <h4 class="mb-2">Company</h4>
+                  <ul class="list-unstyled">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Products</a></li>
+                      <li><a href="#">Login</a></li>
+                      <li><a href="#">Sign Up</a></li>
+                  </ul>
+              </div>
+          </div>
+          
+      </div>
+  </section>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
